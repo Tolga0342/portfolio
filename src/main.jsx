@@ -5,8 +5,8 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
-import { NotFound } from "./pages/notFound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { NotExisting } from "./pages/Notexisting";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "*",
-        element: <NotFound />,
+        element: <NotExisting />,
       },
     ],
   },
