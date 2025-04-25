@@ -1,0 +1,102 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc;
+}
+
+.not-found h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+
+.not-found svg {
+  margin-bottom: 2rem;
+  color: #ff6f61;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+}
+
+.home-link:hover {
+  background-color: #1e40af;
+}
+
+@media (max-width: 1024px) {
+  .not-found h1 {
+    font-size: 2.5rem; /* Verklein de titel voor tablets */
+  }
+
+  .not-found p {
+    font-size: 1.1rem; /* Verklein de paragraaf voor tablets */
+  }
+
+  .not-found svg {
+    margin-bottom: 1.5rem; /* Verminder de ruimte voor het icoon op tablets */
+  }
+
+  .home-link {
+    padding: 0.8rem 1.5rem; /* Verklein de padding van de knop op tablets */
+    font-size: 1.1rem; /* Verklein de tekstgrootte van de knop op tablets */
+  }
+}
+
+/* Voor schermen kleiner dan 768px (mobiele apparaten) */
+@media (max-width: 768px) {
+  .not-found {
+    height: auto; /* Verwijder de vaste hoogte zodat de inhoud goed schaalt op mobiel */
+    padding: 2rem 1rem; /* Voeg meer padding toe voor betere leesbaarheid */
+  }
+
+  .not-found h1 {
+    font-size: 2rem; /* Verklein de titel voor mobiele schermen */
+    margin-bottom: 0.75rem;
+  }
+
+  .not-found p {
+    font-size: 1rem; /* Verklein de tekstgrootte voor mobiele schermen */
+    margin-bottom: 1.5rem; /* Voeg wat ruimte toe onder de tekst */
+  }
+
+  .not-found svg {
+    margin-bottom: 1.5rem; /* Verminder de ruimte voor het icoon op mobiele apparaten */
+  }
+
+  .home-link {
+    padding: 0.75rem 1.25rem; /* Verklein de knop op mobiele schermen */
+    font-size: 1rem; /* Verklein de tekstgrootte van de knop op mobiele schermen */
+  }
+}
+
+/* Voor schermen kleiner dan 480px (zeer kleine schermen) */
+@media (max-width: 480px) {
+  .not-found h1 {
+    font-size: 1.75rem; /* Verklein de titel verder voor zeer kleine schermen */
+  }
+
+  .not-found p {
+    font-size: 0.9rem; /* Verklein de tekst voor zeer kleine schermen */
+  }
+
+  .home-link {
+    padding: 0.6rem 1.2rem; /* Verklein de knop verder voor zeer kleine schermen */
+    font-size: 0.95rem; /* Verklein de tekst op de knop */
+  }
+}

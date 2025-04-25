@@ -1,0 +1,182 @@
+.about-section {
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1200px;
+  gap: 3rem;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.about-image img {
+  width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 8rem;
+  margin-right: 1rem;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-content {
+  flex: 2;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  color: #2d3748;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #4a5568;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skill svg {
+  transition: transform 0.3s ease;
+}
+
+.skill:hover svg {
+  transform: scale(1.1);
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column; /* Stapel de afbeelding en content */
+    gap: 2rem;
+  }
+
+  .about-image img {
+    width: 300px; /* Verklein de afbeelding voor tablet schermen */
+    height: 400px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(130px, 1fr)
+    ); /* Kleinere kolommen voor skills */
+  }
+}
+
+/* Voor schermen kleiner dan 768px (mobiele apparaten) */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Zorg ervoor dat de inhoud boven elkaar staat */
+    gap: 1.5rem;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 350px; /* Maak de afbeelding kleiner voor mobiel */
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(120px, 1fr)
+    ); /* Zorg voor kleinere en goed uitgelijnde kolommen */
+  }
+
+  .skill p {
+    font-size: 1rem;
+  }
+}
+
+/* Voor schermen kleiner dan 480px (zeer kleine schermen) */
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    ); /* Nog kleinere skills kolommen */
+  }
+
+  .skill p {
+    font-size: 0.9rem; /* Verklein de tekst van de skills */
+  }
+}

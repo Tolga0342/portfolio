@@ -1,0 +1,201 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 2rem;
+  background-color: #f9fafb;
+  font-family: "Inter", sans-serif;
+}
+
+.home-content {
+  max-width: 800px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+  animation: fadeInUp 0.6s ease-in-out both;
+}
+
+.home-content:hover {
+  transform: translateY(-2px);
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  color: #111827;
+  margin-bottom: 1rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  font-weight: 700;
+}
+
+.home-content h2 {
+  font-size: 1.75rem;
+  color: #111827;
+  margin-bottom: 1rem;
+  font-weight: 350;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.divider {
+  width: 40px;
+  height: 4px;
+  background-color: #2563eb;
+  margin: 1rem auto;
+  border-radius: 9999px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.modern-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.15);
+  white-space: nowrap;
+}
+
+.modern-cta:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.modern-cta.outline {
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  box-shadow: none;
+}
+
+.modern-cta.outline:hover {
+  background-color: #2563eb10;
+  transform: translateY(-2px) scale(1.02);
+}
+
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #1f2937;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .home-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .button-group {
+    flex-direction: column; /* Stapel de knoppen verticaal */
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .modern-cta {
+    width: 100%; /* Maak de knoppen breed zodat ze de volledige breedte van het scherm benutten */
+    padding: 1rem 0; /* Verhoog de verticale padding zodat de knoppen groter en makkelijker klikbaar zijn */
+    font-size: 1.125rem; /* Verhoog de tekstgrootte een beetje voor betere zichtbaarheid */
+  }
+
+  .modern-cta.outline {
+    width: 100%; /* Maak ook de outline knop 100% breed */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    padding: 1rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-content p {
+    font-size: 0.95rem;
+  }
+  .modern-cta {
+    font-size: 1rem; /* Verklein de font size iets meer voor kleinere schermen */
+  }
+}

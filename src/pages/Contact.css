@@ -1,0 +1,230 @@
+.contact-section {
+  padding: 0.5rem 1rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #1f2937;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #4b5563;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.contact-form button {
+  padding: 1rem 1.8rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+.contact-form button:hover {
+  background-color: #1e40af;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+.contact-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.1);
+}
+
+/* Animatie */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out both;
+}
+.status-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Successbericht */
+.success-message {
+  background-color: #28a745;
+}
+
+/* Foutbericht */
+.error-message {
+  background-color: #dc3545;
+}
+
+/* Pijl animatie voor het uitrollen van de melding */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Icoontjes toevoegen */
+.status-message svg {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Animatie voor het verdwijnen van de melding */
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+}
+
+.fade-out {
+  animation: slideOut 0.5s ease-out forwards;
+}
+
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem; /* Verklein de tekst voor tablet-schermen */
+  }
+
+  .contact-form button {
+    padding: 0.9rem 1.5rem; /* Verklein de button voor tablets */
+  }
+
+  .status-message {
+    width: 90%; /* Meldingen nemen iets meer ruimte in op kleinere schermen */
+  }
+}
+
+/* Voor schermen kleiner dan 768px (mobiele apparaten) */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    gap: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+    font-size: 0.9rem; /* Verklein de tekst op mobiele schermen */
+  }
+
+  .contact-form button {
+    padding: 0.8rem 1.5rem; /* Verklein de button voor mobiele schermen */
+    font-size: 1rem; /* Pas het lettertype aan voor mobiele apparaten */
+  }
+
+  .status-message {
+    width: 95%; /* Vergroot de statusmelding om goed zichtbaar te blijven */
+  }
+}
+
+/* Voor schermen kleiner dan 480px (zeer kleine schermen) */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem; /* Verklein de titel voor kleine schermen */
+  }
+
+  .contact-intro {
+    font-size: 1rem; /* Verklein de tekstintro voor kleine schermen */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.7rem;
+    font-size: 0.85rem; /* Verklein de tekst voor zeer kleine schermen */
+  }
+
+  .contact-form button {
+    padding: 0.7rem 1.5rem; /* Verklein de button verder voor zeer kleine schermen */
+    font-size: 0.95rem;
+  }
+
+  .status-message {
+    width: 100%; /* Zorg ervoor dat meldingen de volledige breedte gebruiken op kleine schermen */
+  }
+}
