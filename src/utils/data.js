@@ -49,5 +49,3 @@ export const projects = [
 // advanced react app: check add event
 // backend project: check of je live demo moet plaatsen.
 // backend project: zo jam check of live demo werkt.
-// portfolio op github plaatsen
-// online gooien de site
