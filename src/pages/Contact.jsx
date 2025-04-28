@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { FaCheckCircle, FaExclamationCircle } from "react-icons/fa"; // Iconen voor succes/fout
+import { FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
 import "./Contact.css";
 
 export const Contact = () => {
@@ -8,13 +8,12 @@ export const Contact = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(null);
 
-  // Verwijder de notificatie na 5 seconden
   useEffect(() => {
     if (success || error) {
       const timer = setTimeout(() => {
         setSuccess(false);
         setError(null);
-      }, 5000); // 5 seconden
+      }, 5000);
 
       return () => clearTimeout(timer);
     }
@@ -25,10 +24,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_hoivsdm", // <-- Vul hier je Service ID in
-        "template_kvkqbx8", // <-- Vul hier je Template ID in
+        "service_hoivsdm", // Service ID
+        "template_kvkqbx8", // Template ID
         form.current,
-        "B8Qs6GYL5quDILDvg" // <-- Vul hier je Public Key in
+        "B8Qs6GYL5quDILDvg" // Public KEY
       )
       .then(
         (result) => {
@@ -49,8 +48,7 @@ export const Contact = () => {
     <section className="contact-section fade-in-up">
       <p className="section-title">Get in touch</p>
       <p className="contact-intro">
-        I'd like to hear from you! If you have any questions or feedback, use
-        the form below.
+        If you have any questions or feedback, use the form below.
       </p>
 
       <form className="contact-form" ref={form} onSubmit={handleSubmit}>
@@ -67,7 +65,6 @@ export const Contact = () => {
         <button type="submit">Submit now</button>
       </form>
 
-      {/* Success of error bericht */}
       {success && (
         <div className="status-message success-message">
           <FaCheckCircle />
