@@ -45,8 +45,8 @@ export const projects = [
   },
 ];
 
-// advanced react app: foto tweede event niet zichtbaar.
-// advanced react app: check add event
 // backend project: check of je live demo moet plaatsen.
 // backend project: zo jam check of live demo werkt.
 // icoon in aboutme / tekst bij contact formeler/ portfolio tekst terug naar homepage
+// teksten aanpassen bij projects
+// readme.md voor alle projecten even kort beschrijving geven.
