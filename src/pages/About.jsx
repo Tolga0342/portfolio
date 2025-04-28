@@ -1,5 +1,6 @@
 import "./About.css";
 import profileImg from "../assets/profile.jpg";
+import vscodeImg from "../assets/VsCode.png";
 import {
   FaReact,
   FaHtml5,
@@ -38,7 +39,7 @@ export const About = () => {
             gained experience with HTML, CSS, Javascript, React, NodeJS/Express,
             SQL and Prisma. I work with tools as VSCODE, Git, Github and
             Postman. Now, I want to use my experience in the workfield as a
-            (junior) developer.
+            junior developer.
           </p>
 
           <div className="skills-list">
@@ -88,7 +89,7 @@ export const About = () => {
             </div>
             <div className="skill">
               <img
-                src="./assets/visualstudiocode.jpg"
+                src={vscodeImg}
                 alt="VS Code"
                 style={{ width: 50, height: 50 }}
               />
