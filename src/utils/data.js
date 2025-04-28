@@ -31,7 +31,7 @@ export const projects = [
     tech: ["HTML", "CSS", "Javasript", "React"],
     type: "Frontend",
     link: "https://github.com/Tolga0342/deploying-project-react-advanced",
-    demo: "https://project-advanced-events.netlify.app/",
+    demo: "https://project-event-app.netlify.app/",
   },
   {
     title: "Booking API",
@@ -49,3 +49,4 @@ export const projects = [
 // advanced react app: check add event
 // backend project: check of je live demo moet plaatsen.
 // backend project: zo jam check of live demo werkt.
+// icoon in aboutme / tekst bij contact formeler/ portfolio tekst terug naar homepage
