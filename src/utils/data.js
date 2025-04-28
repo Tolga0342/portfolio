@@ -30,7 +30,7 @@ export const projects = [
     image: FrontEndImage,
     tech: ["HTML", "CSS", "Javasript", "React"],
     type: "Frontend",
-    link: "https://github.com/Tolga0342/deploying-project-react-advanced",
+    link: "https://github.com/Tolga0342/deploy-react-event-app",
     demo: "https://project-event-app.netlify.app/",
   },
   {
