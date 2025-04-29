@@ -40,13 +40,10 @@ export const projects = [
     image: BackEndImage,
     tech: ["NodeJS", "Express", "Prisma"],
     type: "Backend",
-    link: "https://github.com/Tolga0342/Backend-Booking-API-project",
-    demo: "https://jouw-live-demo.com",
+    link: "https://github.com/Tolga0342/deploy-booking-API",
+    demo: "https://booking-api-567h.onrender.com/",
   },
 ];
 
-// backend project: check of je live demo moet plaatsen.
-// backend project: zo jam check of live demo werkt.
-// icoon in aboutme / tekst bij contact formeler/ portfolio tekst terug naar homepage
 // teksten aanpassen bij projects
 // readme.md voor alle projecten even kort beschrijving geven.
