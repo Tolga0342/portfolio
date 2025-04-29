@@ -1,12 +1,12 @@
 import CssImage from "../assets/HTML_CSS.webp";
 import ReactImage from "../assets/React.jpg";
-import FrontEndImage from "../assets/Frontend.png";
+import ChakraImage from "../assets/chakra.png";
 import BackEndImage from "../assets/NodeJs.jpg";
 
 export const projects = [
   {
-    title: "Fitness subscription",
-    description: "Responsive page created with HTML tags and designed with CSS",
+    title: "Fitness page",
+    description: "Single page created with HTML and CSS",
     tech: ["HTML", "CSS"],
     image: CssImage,
     type: "Frontend",
@@ -15,28 +15,25 @@ export const projects = [
   },
   {
     title: "Recipe app",
-    description:
-      "Responsive react app includes home page with search -& click function and recipe page with return function styled with chakra-ui",
+    description: "React app created with HTML, Javascript, React and Chakra-ui",
     image: ReactImage,
-    tech: ["HTML", "CSS", "Javasript", "React"],
+    tech: ["HTML", "Javascript", "React", "Chakra-ui"],
     type: "Frontend",
     link: "https://github.com/Tolga0342/deploying-project-react-basic",
     demo: "https://project-basic-recipechecker.netlify.app/",
   },
   {
     title: "Event app",
-    description:
-      "Responsive react app includes home page with navbar, search -& filter function, event page with edit -& delete function and adding page styled with Chakra-ui ",
-    image: FrontEndImage,
-    tech: ["HTML", "CSS", "Javasript", "React"],
+    description: "React app created with HTML, Javascript, React and Chakra-ui",
+    image: ChakraImage,
+    tech: ["HTML", "Javascript", "React", "Chakra-ui"],
     type: "Frontend",
     link: "https://github.com/Tolga0342/deploy-react-event-app",
     demo: "https://project-event-app.netlify.app/",
   },
   {
     title: "Booking API",
-    description:
-      "Developing RESTFUL API with NodeJS/Express and Prisma includes route handling, middleware, authentication and error handling",
+    description: "RESTful API created with NodeJS, Express and Prisma",
     image: BackEndImage,
     tech: ["NodeJS", "Express", "Prisma"],
     type: "Backend",
@@ -45,5 +42,4 @@ export const projects = [
   },
 ];
 
-// teksten aanpassen bij projects
 // readme.md voor alle projecten even kort beschrijving geven.
