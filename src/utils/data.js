@@ -41,5 +41,3 @@ export const projects = [
     demo: "https://booking-api-567h.onrender.com/",
   },
 ];
-
-// readme.md voor alle projecten even kort beschrijving geven.

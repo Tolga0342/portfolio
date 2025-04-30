@@ -25,7 +25,7 @@ export const Home = () => {
             <Link to="/projects" className="modern-cta">
               View my projects <FiArrowRight />
             </Link>
-            <a href="/cv.pdf" download className="modern-cta outline">
+            <a href="/mijncv.pdf" download className="modern-cta outline">
               Download CV <FiDownload />
             </a>
           </div>
